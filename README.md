@@ -1,27 +1,8 @@
 ##
 inicializar backend y frontend 
+## descripcion
+Aplicación web en Kotlin usando KVision y Ktor con RPC sobre WebSocket para crear, listar y eliminar productos en tiempo real.
+
 ## vista
 <img width="1916" height="893" alt="image" src="https://github.com/user-attachments/assets/5784f4dd-fc24-4904-ab95-74ab71f2d953" />
 
-
-
-
-
-## Gradle Tasks
-
-### Resource Processing
-* generatePotFile - Generates a `src/jsMain/resources/modules/i18n/messages.pot` translation template file.
-### Compiling
-* compileKotlinJs - Compiles frontend sources.
-* compileKotlinJvm - Compiles backend sources.
-### Running
-* jsBrowserDevelopmentRun - Starts a webpack dev server on port 3000
-* jvmRun - Starts a dev server on port 8080
-
-Note: For auto reload with Ktor JVM backend you need to run  `gradlew -t compileKotlinJvm` in a separate Gradle process.
-
-### Packaging
-* jsBrowserDistribution - Bundles the compiled js files into `build/dist/js/productionExecutable`
-* jsJar - Packages a standalone "web" frontend jar with all required files into `build/libs/*.jar`
-* jvmJar - Packages a backend jar with compiled source files into `build/libs/*.jar`
-* jarWithJs - Packages a "fat" jar with all backend sources and dependencies while also embedding frontend resources into `build/libs/*.jar`
